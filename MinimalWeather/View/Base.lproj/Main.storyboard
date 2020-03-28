@@ -374,8 +374,8 @@
                                     <constraint firstAttribute="trailing" secondItem="iGv-Y5-8pl" secondAttribute="trailing" constant="20" id="uby-Ee-xVw"/>
                                 </constraints>
                             </view>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.0" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Waiting screen" translatesAutoresizingMaskIntoConstraints="NO" id="vGb-KM-KOm">
-                                <rect key="frame" x="500" y="0.0" width="375" height="667"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Waiting screen" translatesAutoresizingMaskIntoConstraints="NO" id="vGb-KM-KOm">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                             </imageView>
                         </subviews>
