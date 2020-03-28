@@ -15,16 +15,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MyPenguin" translatesAutoresizingMaskIntoConstraints="NO" id="Wb0-34-mwr">
-                                <rect key="frame" x="104" y="260" width="206" height="376"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Waiting screen" translatesAutoresizingMaskIntoConstraints="NO" id="Wb0-34-mwr">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="Wb0-34-mwr" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="216" id="3DY-KM-TJW"/>
-                            <constraint firstItem="Wb0-34-mwr" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="M6u-jh-8aW"/>
-                            <constraint firstItem="Wb0-34-mwr" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="104" id="iUs-8Q-Ffm"/>
-                            <constraint firstItem="Wb0-34-mwr" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="zwf-RD-khX"/>
+                            <constraint firstAttribute="trailing" secondItem="Wb0-34-mwr" secondAttribute="trailing" id="Iz5-8x-qdU"/>
+                            <constraint firstAttribute="bottom" secondItem="Wb0-34-mwr" secondAttribute="bottom" id="VIg-PI-NbK"/>
+                            <constraint firstItem="Wb0-34-mwr" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="mMc-N9-xnf"/>
+                            <constraint firstItem="Wb0-34-mwr" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="vpK-AR-iP9"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -35,6 +35,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="MyPenguin" width="384" height="480"/>
+        <image name="Waiting screen" width="828" height="1792"/>
     </resources>
 </document>

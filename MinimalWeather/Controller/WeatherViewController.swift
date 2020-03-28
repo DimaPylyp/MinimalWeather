@@ -37,7 +37,6 @@ class WeatherViewController: UIViewController, UICollectionViewDelegate{
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
         let tap = UITapGestureRecognizer(target: self.view, action: #selector(UIView.endEditing))
         tap.cancelsTouchesInView = false
         view.addGestureRecognizer(tap)
@@ -118,9 +117,7 @@ extension WeatherViewController: WeatherManagerDelegate {
         //            dateFormatter.timeZone = .current
         //            let localDate = dateFormatter.string(from: date)
         //            print(localDate)
-        //        }
-        print("didUpdateWeather")
-        
+        //        }        
         DispatchQueue.main.async {
             //                        self.temperatureLabel.text = "\(weather.timeSlotsArray[0].temperatureString)°C"
             //                        self.weatherPicture.image = UIImage(systemName: weather.timeSlotsArray[0].conditionName)
@@ -131,6 +128,8 @@ extension WeatherViewController: WeatherManagerDelegate {
             self.weatherPicture.image = UIImage(systemName: weather.days[0].timeSlotsDictionary[0]!.conditionName)
             self.windDirectionPicture.image = UIImage(systemName: weather.days[0].timeSlotsDictionary[0]!.windDirectionArrow)
             self.dateLabel.text = ("\(weather.days[0].timeSlotsDictionary[0]!.dayOfTheWeek), \(weather.days[0].timeSlotsDictionary[0]!.dayOfTheMonth) \(weather.days[0].timeSlotsDictionary[0]!.month)")
+            self.humidityLabel.text = "\(weather.days[0].timeSlotsDictionary[0]!.humidity)%"
+            self.windSpeedLabel.text = "\( weather.days[0].timeSlotsDictionary[0]!.windSpeed)m/s"
             self.hourlyForecastCollectionView.reloadData()
             self.dailyForecastCollectionView.reloadData()
             self.launchScreenImage.isHidden = true

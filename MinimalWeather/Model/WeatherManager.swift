@@ -75,17 +75,14 @@ struct WeatherManager{
             var numberOfSlot = 0
 
             for i in timeSlotsArray{
-                print(i.hour, i.dayOfTheWeek)
                 if i.dayOfTheWeek != previousDay{
                 let date = i.date
-                    print("created")
                     days.append(DayModel(date: date, timeSlotsDictionary: [:], minimumTemperature: "", maximumTemperature: ""))
                     numberOfADay += 1
                     days[numberOfADay - 1].timeSlotsDictionary[numberOfSlot] = i
                     numberOfSlot += 1
                     previousDay = i.dayOfTheWeek
                 } else {
-                    print("added")
                     days[numberOfADay - 1].timeSlotsDictionary[numberOfSlot] = i
                     var temperaturesArray: [Double] = []
                     for i in days[numberOfADay - 1].timeSlotsDictionary{
@@ -93,9 +90,7 @@ struct WeatherManager{
                     }
                     numberOfSlot += 1
                     days[numberOfADay - 1].minimumTemperature = String(Int(temperaturesArray.min() ?? 0))
-                    print("minimus is:\(days[numberOfADay - 1].minimumTemperature)")
                     days[numberOfADay - 1].maximumTemperature = String(Int(temperaturesArray.max() ?? 0))
-                    print("maximum is:\(days[numberOfADay - 1].maximumTemperature)")
                 }
             }
             
